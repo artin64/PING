@@ -25,7 +25,7 @@ PINGO i ndihmon njerëzit t’i ruajnë informacionet e rëndësishme në një v
 
 - Repository zyrtar: https://github.com/artin64/PING
 - Pronari i repository-t: Artin Krasniqi.
-- Sipas ekipit, Erion Miftari është shtuar si collaborator.
+- Sipas ekipit, Erion Miftari është shtuar si collaborator dhe bashkpunetor ne ndertimin e aplikacioni
 - Sipas ekipit, qasja për vlerësuesin është siguruar duke e bërë repository-n publik ose duke ftuar `Agonb`.
 
 Ekipi konfirmon se kolegët janë njoftuar për repository-n.
