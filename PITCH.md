@@ -22,4 +22,3 @@ Artini dhe Erioni e kanë provuar pitch-in me zë dy herë me kronometër.
 | 1 | E kryer me kronometër |
 | 2 | E kryer me kronometër |
 
-Për paraqitje para klasës, zgjidhni kush e thotë pitch-in; të dy duhet ta kuptojnë pa e lexuar. Përmbledhjet anonime të bisedave janë te BISEDAT.md; paraqitini si tri përvoja cilësore, jo si statistikë të tregut.
