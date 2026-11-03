@@ -2,9 +2,8 @@
 
 ## Versioni për provë me zë
 
-**Kush:** PINGO u shërben njerëzve që ruajnë bileta, fatura dhe afate në telefon. **Problemi:** këto informacione shpërndahen mes galerive, mesazheve, email-eve dhe dokumenteve, ndërsa afatet mbahen mend manualisht. **Dëshmia:** në tri bisedat tona të 31 tetorit dhe 1 nëntorit, një student kaloi 20–30 minuta duke kërkuar laptopin që kishte parë, por nuk e gjeti ofertën origjinale; një punonjës pagoi faturën e internetit disa ditë me vonesë pasi harroi afatin; një person tjetër zbuloi vonë se po afrohej afati i dokumenteve të automjetit. Këto janë përvoja cilësore, jo matje e gjithë tregut. **Puna e vetme:** PINGO e ruan burimin, e bën informacionin të kërkueshëm dhe i kthen datat e konfirmuara në kujtesa. **Çka na duhet:** reagimi juaj për demonstrimin listë → detaje dhe këshilla se cilin rast të provojmë më tej.
+**Kush:** PINGO u shërben njerëzve që ruajnë bileta, fatura dhe afate në telefon. **Problemi:** këto informacione shpërndahen mes galerive, mesazheve, email-eve dhe dokumenteve, ndërsa afatet mbahen mend manualisht. **Dëshmia:** në tri bisedat tona të 31 tetorit dhe 1 nëntorit, një student kaloi 20–30 minuta duke kërkuar laptopin që kishte parë, por nuk e gjeti ofertën origjinale; një punonjës pagoi faturën e internetit disa ditë me vonesë pasi harroi afatin; një person tjetër zbuloi vonë se po afrohej afati i dokumenteve të automjetit. Këto janë përvoja cilësore, jo matje e gjithë tregut. **Puna e vetme:** PINGO e ruan burimin, e bën informacionin të kërkueshëm dhe i kthen datat e konfirmuara në kujtesa. 
 
-Rreth 120 fjalë. Lexojeni me ritëm natyral; synimi është 55–65 sekonda. Nëse zgjat më shumë se 65 sekonda, hiqni një fjali shpjeguese, jo dëshminë ose kërkesën.
 
 ## Provat kërkimore
 
