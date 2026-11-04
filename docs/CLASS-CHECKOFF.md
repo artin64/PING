@@ -22,12 +22,15 @@ Ky dokument lidh kërkesat e ushtrimit me rrjedhat reale të PINGO-s. Ekranet p�
 3. Mbylle plotësisht aplikacionin, hape përsëri dhe kyçu sërish në të njëjtën llogari nëse kërkohet.
 4. Hape **Memory**. I njëjti shënim duhet të jetë ende aty, sepse ruhet në PostgreSQL të backend-it. Sesioni celular ruhet në SecureStore në iOS/Android.
 
+API-ja cakton pronarin nga access token-i dhe kryen `commit` para se të kthejë sukses; klienti rifreskon listën Memory dhe përmbledhjen Today pas ruajtjes.
+
 ## M3 · Ekrani kryesor me të dhëna reale
 
 - **Ekrani:** `Today` në [`mobile/src/app/(app)/index.tsx`](../mobile/src/app/%28app%29/index.tsx).
 - **Burimi:** `GET /api/v1/dashboard`, me kujtesat e fundit, afatet/pagesat për vëmendje dhe udhëtimet e ardhshme të llogarisë aktive.
+- Hyrja `/` tani hap ekranin Today të grupit të autentikuar; nuk ka më ekran hyrës me artikuj statikë.
 - Për demonstrim, krijo një kujtesë ose përkujtesë me **Add**, kthehu në **Today** dhe trego rekordin që sapo u ruajt. Kur llogaria nuk ka përkujtesa, shfaqet gjendja bosh; nuk shfaqen detyra të sajuara.
 
 ## Kufiri mes kodit dhe demonstrimit
 
-Kodi përmban rrugët reale të ruajtjes, leximit dhe rifreskimit. Kriteret që kërkojnë **telefon fizik**, **Supabase të konfiguruar** dhe **mbyllje/ririhapje të aplikacionit** duhen demonstruar në pajisje pas konfigurimit të `.env` dhe `mobile/.env.local`; kjo dosje nuk i paraqet si testime fizike të kryera.
+Kodi përmban rrugët reale të ruajtjes, leximit dhe rifreskimit. `DATABASE_URL` bosh e lë backend-in në SQLite lokale; për M1–M3 me Supabase, databaza cloud duhet konfiguruar në `.env` para nisjes së API-së. Kriteret që kërkojnë **telefon fizik**, **Supabase të konfiguruar** dhe **mbyllje/ririhapje të aplikacionit** duhen demonstruar në pajisje pas konfigurimit të `.env` dhe `mobile/.env.local`; kjo dosje nuk i paraqet si testime fizike të kryera.

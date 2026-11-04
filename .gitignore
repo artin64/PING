@@ -17,3 +17,8 @@ backend/.mypy_cache/
 backend/.ruff_cache/
 *.py[cod]
 
+node_modules/
+**/node_modules/
+.expo/
+dist/
+build/

@@ -6,20 +6,22 @@ Kur dikush ruan një informacion të rëndësishëm, PINGO e mban burimin bashk�
 
 ## Rrjedha kryesore
 
-1. **Lista** — memories e ruajtura, të renditura dhe të kërkueshme.
-2. **Detajet** — titulli, përmbledhja dhe burimi origjinal i një memory-je.
-3. **Shto** — shënim, lidhje, fotografi ose PDF.
-4. **Konfirmo afatin** — përdoruesi kontrollon datën dhe konfirmon kujtesën para aktivizimit.
-5. **Sot** — përdoruesi sheh afatet që kërkojnë veprim.
+1. **Today** — përmbledhja e llogarisë aktive nga API-ja dhe PostgreSQL (Supabase kur konfigurohet `DATABASE_URL`).
+2. **Memory** — lista reale e kujtimeve të llogarisë, me kërkim.
+3. **Detajet** — rekordi dhe burimi i ruajtur, i hapur sipas ID-së.
+4. **Add** — përdoruesi ruan një shënim ose lidhje; API-ja e shkruan në databazë.
+   Pas ruajtjes, Memory dhe Today rifreskohen nga API-ja dhe tregojnë rekordin e ri.
 
 ~~~mermaid
 flowchart LR
-  A[Lista e memories] --> B[Detajet dhe burimi]
-  A --> C[Shto informacion]
-  C --> B
-  B --> D[Kontrollo datën]
-  D --> E[Konfirmo kujtesën]
-  E --> F[Sot: veprimet]
+  A[Sot: të dhënat e llogarisë] --> B[Memory: lista reale]
+  B --> C[Detajet dhe burimi]
+  B --> D[Shto shënim ose lidhje]
+  D --> E[PostgreSQL i konfiguruar: ruajtje përmes API-së]
+  E --> B
+  E --> A
+  C --> F[Kontrollo dhe konfirmo datën]
+  F --> A
 ~~~
 
 ## Skica të shpejta
@@ -46,15 +48,16 @@ Burimi: screenshot i ruajtur
 [Kontrollo datat]            [Ndrysho]
 ~~~
 
-Skicat dhe titujt e memories janë shembuj demonstrimi, jo të dhëna të intervistave.
+Skicat janë vetëm wireframe tekstuale. Aplikacioni nuk përdor kujtime shembull si të dhëna të përdoruesit.
 
 ## Brenda MVP-së
 
-- Listë me 5–8 memories shembull për demonstrimin J3.
-- Komponent rreshti me props të tipizuara dhe listë FlatList.
-- Hapja e artikullit sipas ID-së tekstuale, lidhja nga lista dhe kontrolli kur ID-ja nuk ekziston.
-- Ruajtja e shënimeve, lidhjeve, fotografive dhe PDF-ve në llogari private.
+- Listë reale nga `GET /api/v1/captures`, me llogari private dhe gjendje bosh kur nuk ka rekorde.
+- Hapja e kujtimit sipas ID-së dhe kontrolli kur ID-ja nuk ekziston.
+- Ruajtja e shënimeve/lidhjeve nga telefoni me `POST /api/v1/captures` dhe leximi i tyre pas rifreskimit ose rihapjes.
 - Kërkimi në informacionin e ruajtur.
+- Ekrani Today i lidhur me `GET /api/v1/dashboard` dhe të dhënat e llogarisë aktive.
+- PostgreSQL i Supabase konfigurohet vetëm në backend me `DATABASE_URL`; telefoni nuk merr fjalëkalim DB ose service-role key.
 - Kujtesat për afate që përdoruesi i shqyrton dhe i konfirmon vetë.
 - Gjendje të lexueshme për listë bosh, gabim kërkimi dhe artikull që mungon.
 
@@ -70,4 +73,4 @@ Skicat dhe titujt e memories janë shembuj demonstrimi, jo të dhëna të interv
 
 ## Shënim për demonstrimin
 
-Rruga J3 përdor të dhëna fiktive të shënuara si shembull që të demonstrohet lista → detajet pa llogari ose server. Modulet e tjera PINGO mbeten në kopje; për konfigurim të tyre shih README.md.
+Demoja përdor llogari reale dhe rekorde që përdoruesi i krijon vetë. Nëse llogaria është bosh, ekrani tregon udhëzim për shtim; mos e mbush me të dhëna të sajuara. Për Supabase duhen `DATABASE_URL` në `.env` të rrënjës dhe API URL e arritshme nga telefoni në `mobile/.env.local`.
