@@ -20,4 +20,3 @@ Sipas `EKIPI.md`, `BISEDAT.md` dhe `HARTA.md`, **PINGO i mban të gjetshme gjër
 - Mbaj dokumentet private, autorizimin sipas pronarit dhe pëlqimin e përdoruesit për analizën e jashtme me AI.
 - Për ndërfaqen, ndiq `mobile/src/lib/theme.ts` dhe komponentët e përbashkët në `mobile/src/components/ui.tsx`; ruaj pesë destinacionet e navigimit.
 
-Para një ndryshimi, përmblidhe idenë kështu: **PINGO i mban të gjetshme gjërat e rëndësishme dhe i ndihmon njerëzit të veprojnë në kohë.**
