@@ -71,6 +71,3 @@ Skicat janë vetëm wireframe tekstuale. Aplikacioni nuk përdor kujtime shembul
 - Sinkronizim me email, share sheet ose shërbime të tjera pa integrim dhe pëlqim.
 - Kërkim semantik/vector dhe blerje abonimi në këtë demonstrim J3.
 
-## Shënim për demonstrimin
-
-Demoja përdor llogari reale dhe rekorde që përdoruesi i krijon vetë. Nëse llogaria është bosh, ekrani tregon udhëzim për shtim; mos e mbush me të dhëna të sajuara. Për Supabase duhen `DATABASE_URL` në `.env` të rrënjës dhe API URL e arritshme nga telefoni në `mobile/.env.local`.
